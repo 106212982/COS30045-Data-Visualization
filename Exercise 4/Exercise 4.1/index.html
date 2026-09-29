@@ -17,21 +17,24 @@
         <!-- Grass -->
         <rect x="0" y="350" width="700" height="150"
               fill="lightgreen"/>
+        <!-- Ground line -->
+        <line x1="0" y1="350" x2="700" y2="350"
+              stroke="green" stroke-width="3"/>
 
         <!-- Sun: circle -->
-        <circle cx="600" cy="80" r="40"
-                fill="yellow" stroke="orange" stroke-width="3"/>
+        <circle cx="600" cy="100" r="40"
+                fill="yellow" stroke="orange" stroke-width="12"/>
 
         <!-- House body: rectangle -->
         <rect x="220" y="200" width="260" height="200"
-              fill="wheat" stroke="brown" stroke-width="3"/>
+              fill="wheat" stroke="brown" stroke-width="12"/>
 
         <!-- Roof: polygon -->
         <polygon points="190,200 350,80 510,200"
-                 fill="firebrick" stroke="black" stroke-width="3"/>
+                 fill="firebrick" stroke="black" stroke-width="12"/>
 
         <!-- Windows grouped together -->
-        <g transform="translate(0,0)"
+        <g transform="translate(0,10)"
            fill="lightblue" stroke="black" stroke-width="3">
             <rect x="250" y="240" width="65" height="65"/>
             <rect x="385" y="240" width="65" height="65"/>
@@ -54,16 +57,13 @@
 
         <!-- Tree leaves: ellipse -->
         <ellipse cx="105" cy="250" rx="65" ry="70"
-                 fill="forestgreen"/>
+                 fill="black"/>
 
         <!-- Flowers: circles -->
-        <circle cx="160" cy="420" r="12" fill="red"/>
+        <circle cx="160" cy="420" r="12" fill="blue"/>
         <circle cx="190" cy="450" r="12" fill="purple"/>
-        <circle cx="530" cy="420" r="12" fill="pink"/>
+        <circle cx="530" cy="420" r="12" fill="green"/>
 
-        <!-- Ground line -->
-        <line x1="0" y1="350" x2="700" y2="350"
-              stroke="green" stroke-width="3"/>
 
         <!-- Text -->
         <text x="350" y="470" font-size="22"
