@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG House and Garden</title>
+</head>
+<body>
+    <h1>My SVG House and Garden</h1>
+
+    <svg width="700" height="500"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Sky -->
+        <rect width="700" height="500" fill="skyblue"/>
+
+        <!-- Grass -->
+        <rect x="0" y="350" width="700" height="150"
+              fill="lightgreen"/>
+
+        <!-- Sun: circle -->
+        <circle cx="600" cy="80" r="40"
+                fill="yellow" stroke="orange" stroke-width="3"/>
+
+        <!-- House body: rectangle -->
+        <rect x="220" y="200" width="260" height="200"
+              fill="wheat" stroke="brown" stroke-width="3"/>
+
+        <!-- Roof: polygon -->
+        <polygon points="190,200 350,80 510,200"
+                 fill="firebrick" stroke="black" stroke-width="3"/>
+
+        <!-- Windows grouped together -->
+        <g transform="translate(0,0)"
+           fill="lightblue" stroke="black" stroke-width="3">
+            <rect x="250" y="240" width="65" height="65"/>
+            <rect x="385" y="240" width="65" height="65"/>
+        </g>
+
+        <!-- Door -->
+        <rect x="325" y="310" width="60" height="90"
+              fill="saddlebrown" stroke="black" stroke-width="3"/>
+
+        <!-- Door knob: circle -->
+        <circle cx="372" cy="355" r="5" fill="gold"/>
+
+        <!-- Path -->
+        <polygon points="325,400 385,400 430,500 280,500"
+                 fill="lightgray"/>
+
+        <!-- Tree trunk -->
+        <rect x="90" y="280" width="30" height="100"
+              fill="saddlebrown"/>
+
+        <!-- Tree leaves: ellipse -->
+        <ellipse cx="105" cy="250" rx="65" ry="70"
+                 fill="forestgreen"/>
+
+        <!-- Flowers: circles -->
+        <circle cx="160" cy="420" r="12" fill="red"/>
+        <circle cx="190" cy="450" r="12" fill="purple"/>
+        <circle cx="530" cy="420" r="12" fill="pink"/>
+
+        <!-- Ground line -->
+        <line x1="0" y1="350" x2="700" y2="350"
+              stroke="green" stroke-width="3"/>
+
+        <!-- Text -->
+        <text x="350" y="470" font-size="22"
+              text-anchor="middle" fill="darkgreen">
+            My Garden
+        </text>
+
+    </svg>
+</body>
+</html>
